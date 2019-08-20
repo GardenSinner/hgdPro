@@ -1,0 +1,93 @@
+<div class="process" dollar>
+  <div class="step-first" dollar>
+    <div class="ball-first">1</div>
+    <p class="p1">选择教材</p>
+  </div>
+  <div class="step-second" dollar>
+    <div class="ball-second">2</div>
+    <p class="p2">课程设置</p>
+  </div>
+  <div class="step-third">
+    <div class="ball-third">3</div>
+    <p class="p3">建立成功</p>
+  </div>
+</div>
+<div class="selected-course">
+  <div class="selected-hd">
+    <span>选用的教材</span>
+    <a href="/createCourse.html" oid="{{setting.id}}">更换教材</a>
+  </div>
+  <div class="selected-bd">
+    <img src="{{setting.img}}">
+    <div class="msg">
+      <h4>{{setting.tit}}</h4>
+      <p>{{setting.author}}</p>
+      <p>{{setting.content}}</p>
+      <p>{{setting.date}}</p>
+    </div>
+  </div>
+</div>
+<div class="info-submit">
+  <div class="info-submit-tit">
+    <h3>基本信息</h3>
+  </div>
+  <form id="frm" action="/api/upload" method="POST" enctype="multipart/form-data">
+    <div class="info-sumbit-bd">
+      <ul class="alllist">
+        <li class="t1" table>
+          <span>课程名称</span>
+          <input type="text" class="class-name">
+        </li>
+        <li class="t2" table>
+          <span start>开课时间</span>
+          <input type="radio" id="set" name="setting" checked>
+          <label for="set">设置</label>
+          <input type="radio" id="set-no" name="setting">
+          <label for="set-no">不设置</label>
+        </li>
+        <li class="t3" table>
+          <span>开始时间</span>
+          <input type="date">
+          <span endtime>截止时间</span>
+          <input type="date">
+        </li>
+        <li class="t4-1" table>
+          <span front>课程封面</span>
+          <input type="file" id="file">
+          <a href="javascript:void(0);" class="select-file">浏览</a>
+        </li>
+        <li class="t4-2">
+          <div class="vision">
+            <h3>预览图片</h3>
+          </div>
+          <img class="pict" src="">
+        </li>
+        <li class="t5 clearfix" table>
+          <div confirm>报名权限</div>
+          <ul class="confirm-option">
+            <li>
+              <input type="radio" id="every" name="permit" checked>
+              <label for="every">允许任何人假如课程</label>
+            </li>
+            <li>
+              <input type="radio" name="permit" id="confirm">
+              <label for="confirm">需要验证后才可假如课程</label>
+            </li>
+            <li>
+              <input type="radio" name="permit" id="noone">
+              <label for="noone">暂不开放报名</label>
+            </li>
+          </ul>
+        </li>
+        <li class="t6">
+          <span quit>学生自主退出课程</span>
+          <input class="rad1" type="radio" id="able" name="quit" checked>
+          <label for="able">允许</label>
+          <input class="rad2" type="radio" id="unable" name="quit">
+          <label for="unable">不允许</label>
+        </li>
+      </ul>
+    </div>
+    <input give type="submit" value="提交">
+  </form>
+</div>

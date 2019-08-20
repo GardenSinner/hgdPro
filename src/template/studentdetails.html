@@ -1,0 +1,47 @@
+<div class="container clearfix">
+  <div class="con-hd">
+    <span>首页</span>
+    <span>&gt;</span>
+    <span>课程资源</span>
+    <span>&gt;</span>
+    <span>课程包名称</span>
+  </div>
+  <div class="sub-con">
+    <div class="sub-con-pic">
+      {{each details as val}}
+      <img src="{{val.imginfo}}">
+      {{/each}}
+      <div>
+        <i class="iconfont icon-wode"></i>
+        <span class="icon">200</span>
+      </div>
+    </div>
+    <div class="sub-con-txt">
+      <h3>{{val.titlemain}}</h3>
+      <h6>{{val.author}}</h6>
+      <h4>{{val.price}}</h4>
+      <a class="gain" href="javascript:void(0);">获取</a>
+      <a class="immediate" href="javascript:void(0);">立即开课</a>
+    </div>
+  </div>
+  <div class="con-bd-aside">
+    <div class="con-bd-aside-hd">
+      <span>相关教材</span>
+      <a href="javascript:void(0);">more...</a>
+    </div>
+    <div class="con-bd-aside-main">
+      {{each details as key}}
+      <a href="javascript:void(0);">
+        <img src="{{key.imgaside}}">
+      </a>
+      {{/each}}
+      <p>超越普里瓦洛夫无穷乘积与它对解析函数的应用卷</p>
+      {{each details as key}}
+      <a href="javascript:void(0);">
+        <img src="{{key.imgaside}}">
+      </a>
+      {{/each}}
+      <p>超越普里瓦洛夫无穷乘积与它对解析函数的应用卷</p>
+    </div>
+  </div>
+</div>

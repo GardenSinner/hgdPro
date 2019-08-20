@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../style/boot.css">
+  <title>pattern</title>
+</head>
+
+<body backstage>
+  <div class="container-fluid">
+    <div class="row">
+      <ol class="breadcrumb col-md-10">
+        <li><a href="#">资源管理</a></li>
+        <li class="active">题型管理</li>
+      </ol>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          添加题型
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default grabble" type="button">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+
+    </div>
+    <div class="row">
+      <form class="form-horizontal">
+        <div class="form-group organize">
+          <label class="col-sm-1 issue">发布状态:</label>
+          <div class="col-sm-10 tabs">
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" checked value="全部">全部
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="小题">小题
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="大题">大题
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row addtable">
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">添加题型</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal formain" id="defaultForm" method="post">
+            <div class="form-group">
+              <label for="inputText1" class="col-sm-4 control-label">题型名称：</label>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" name='questionNname' id="inputText1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputText2" class="col-sm-4 control-label">类型：</label>
+              <div class="col-sm-5">
+                <select class='form-control' id="inputText2" name='type'>
+                  <option>小题</option>
+                  <option>大题</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group organize addContent">
+
+            </div>
+            <div class="last"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button"  id="btn-test" class="btn btn-primary">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../lib/require.js" data-main="../../js/controller/pattern.js"></script>
+
+</html>

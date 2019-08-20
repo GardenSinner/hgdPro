@@ -1,0 +1,21 @@
+<div class="panel-group panel" id="accordion" role="tablist" aria-multiselectable="true">
+  {{each data as item index}}
+  <div class="panel panel-default panelClick">
+    <div class="panel-heading" role="tab" id="heading{{index}}">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{index}}" aria-expanded="false"
+          aria-controls="collapse{{index}}">
+          {{item.name}}
+        </a>
+      </h4>
+    </div>
+    <div id="collapse{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{index}}">
+      <ul class="list-group">
+        {{each item.children as value index}}
+        <li class="list-group-item" url="{{value.url}}">{{value.name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  {{/each}}
+</div>

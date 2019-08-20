@@ -1,0 +1,112 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.header {
+  padding-top: 35px;
+  height: 120px;
+  box-sizing: border-box;
+}
+
+.container1 {
+    width: 1052px;
+    margin: 0 auto;
+
+    .logo {
+        width: 270px;
+        height: 50px;
+        float: left;
+        margin-top: -5px;
+
+        a {
+            background: url('../../../assets/logo.png') no-repeat;
+            width: 270px;
+            height: 50px;
+            background-size: contain;
+            display: block;
+            text-indent: -9999px;
+        }
+    }
+
+    .info {
+        float: right;
+
+        .clearfix {
+            .item {
+                float: left;
+                margin-left: 20px;
+
+                .iconfont {
+                    font-size: 25px;
+                    margin-bottom: -5px;
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+            .sp1,
+            .sp2 {
+                font-size: 12px;
+                // line-height: 55px;
+                padding-top: 8px;
+                position: relative;
+                cursor: pointer;
+                box-sizing: border-box;
+
+                .dial1,
+                .dial2 {
+                    position: absolute;
+                    top: 27px;
+                    right: -30px;
+                    border: 1px solid #808080;
+                    display: none;
+                    z-index: 100;
+                    a {
+                        color: #808080;
+                        display: block;
+                        background: #fff;
+                        width: 95px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-bottom: 1px solid #808080;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border: 5px solid #e7594d;
+                    border-color: #e7594d transparent transparent;
+                    top: 15px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+
+    .search {
+        margin: 10px 240px 0 300px;
+        position: relative;
+
+        .sear {
+            width: 415px;
+            height: 29px;
+            border: 1px solid #e8e8e8;
+            box-sizing: border-box;
+            padding: 0 2em;
+        }
+
+        .icon-search {
+            position: absolute;
+            top: 6px;
+            right: 100px;
+        }
+    }
+}

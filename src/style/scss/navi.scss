@@ -1,0 +1,64 @@
+.navi {
+    width: 100%;
+    height: 54px;
+    background: linear-gradient(90deg, #3598db, #3598db 70%, #e7594d 70%, #e7594d 100%);
+
+    .container2 {
+        width: 1050px;
+        margin: 0 auto;
+        a{
+          font-size: 14px;
+          line-height: 14px;
+          color: #fff;
+        }
+        .le {
+            background: #3598db;
+            float: left;
+            padding-top: 12px;
+
+            a:hover {
+              background: #2db0f9;
+            }
+
+            a {
+                float: left;
+                padding: 7px 18px;
+            }
+
+            span {
+              float: left;
+              height: 20px;
+              width: 2px;
+              background: #fff;
+              margin:4px 34px 0;
+
+            }
+        }
+
+        .ri {
+            background: #e7594d;
+            float: right;
+            height: 54px;
+            box-sizing: border-box;
+            padding-top:12px;
+            padding-left: 100px;
+
+            a {
+                float: left;
+                padding: 7px 18px;
+            }
+
+            a:hover {
+              background: #f8837a;
+            }
+
+            span {
+              float: left;
+              width: 2px;
+              height: 20px;
+              background: #fff;
+              margin:4px 17px 0;
+            }
+        }
+    }
+}

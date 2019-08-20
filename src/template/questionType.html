@@ -1,0 +1,8 @@
+<label class="col-sm-4 issue control-label">基础题型:</label>
+<div class="col-sm-8">
+  {{each data as item index}}
+  <label class="radio-inline">
+    <input type="radio" name="basicsQuestion" id="basicsQuestion{{index}}" value="{{item.name}}">{{item.name}}
+  </label>
+  {{/each}}
+</div>

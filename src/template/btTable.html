@@ -1,0 +1,31 @@
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>题型名称</th>
+          <th>类型</th>
+          <th>基础类型</th>
+          <th>是否关联题库</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{each data as item index}}
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.questionNname}}</td>
+          <td>{{item.type}}</td>
+          {{if item.inlineCheckbox}}
+          <td>{{item.basicsQuestion}}({{item.inlineCheckbox}})</td>
+          {{else}}
+          <td>{{item.basicsQuestion}}</td>
+          {{/if}}
+          <td>{{item.correlation}}</td>
+          <td isEdit="{{item.isEdit}}">{{#item.edit}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <div class="zxf_pagediv"></div>
+  </div>

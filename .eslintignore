@@ -1,0 +1,7 @@
+./*.js
+*.html
+dist
+node_modules
+src/lib/template
+src/lib/*.js
+src/style/bootstrapcss/*.{scss,css}

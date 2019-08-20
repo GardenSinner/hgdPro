@@ -1,0 +1,38 @@
+<div class="container clearfix">
+  <div class="list-item recommed">
+    <div class="list_item-h">
+      <h3>推荐课程</h3>
+      <a href="#">more</a>
+    </div>
+    <ul class="img_list clearfix">
+      {{each teacherList as tea}}
+      <li>
+        <div class="imgwrap">
+          <a uid="{{tea.id}}" href="javascript:void(0);">
+            <img src="{{tea.img}}">
+          </a>
+          <p>{{tea.course}}</p>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="list-item hot">
+    <div class="list_item-h">
+      <h3>热门课程</h3>
+      <a href="#">more</a>
+    </div>
+    <ul class="img_list clearfix">
+      {{each teacherList as tea}}
+      <li>
+        <div class="imgwrap">
+          <a uid="{{tea.id}}" href="javascript:void(0);">
+            <img src="{{tea.img}}" alt="">
+          </a>
+          <p>{{tea.course}}</p>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

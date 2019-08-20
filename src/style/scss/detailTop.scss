@@ -1,0 +1,75 @@
+@mixin border() {
+  border: 2px solid #ebebeb;
+}
+.m_header{
+  @include border();
+  box-sizing: border-box;
+  padding: 25px 27px 26px 25px;
+  .m_t[datailtop]{
+    position: relative;
+    img{
+      @include border();
+      margin-right: 25px;
+      float: left;
+    }
+    .m_t_aside{
+      width: 645px;
+      float: left;
+      .aside_top{
+        border-bottom: 2px solid #ebebeb;
+        h2{
+          line-height: 40px;
+          color: #1a1a1a;
+          font-size: 20px;
+        }
+        p{
+          height: 19px;
+          line-height: 19px;
+          font-size: 16px;
+          padding-bottom: 16px;
+          span{
+            margin-top: 2px;
+            float: left;
+            &:nth-of-type(2){
+              margin-left: 12px;
+              color: #e7594d;
+            }
+          }
+        }
+      }
+      .aside_bottom{
+        ul{
+          width: 456px;
+          padding-top: 7px;
+          li{
+            width: 50%;
+            font-size: 14px;
+            line-height: 32px;
+            color: #747474;
+            &:nth-of-type(2n-1){
+              float: left;
+            }
+            &:nth-of-type(2n){
+              float: left;
+            }
+          }
+        }
+        .btn{
+          font-size: 16px;
+          color: #fff;
+          text-align: center;
+          line-height: 36px;
+          background: #2db0f9;
+          width: 185px;
+          border: 1px solid #6ac7fb;
+          box-sizing: border-box;
+          border-radius: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 350px;
+        }
+      }
+    }
+  }
+
+}

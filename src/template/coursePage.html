@@ -1,0 +1,25 @@
+<div class="c_r_h clearfix">
+  <h3>共<span>{{data.total}}</span>个课程</h3>
+  <div class='right'>
+    <i class='backpage'>&lt;</i>
+    <span>{{data.page}}</span>
+    <span>/</span>
+    <span>{{data.pageCount}}</span>
+    <i class='nextpage'>&gt;</i>
+  </div>
+</div>
+<ul class="imgList">
+  {{each data.currentData as item index}}
+  <li>
+    <a href="javascript:;" uid="{{item.id}}">
+      <img src="{{item.img}}" alt="">
+    </a>
+    <p>{{item.title}}</p>
+    <p class='clearfix'><span class='author'>{{item.author}}</span><span class='press'>{{item.press}}</span></p>
+  </li>
+  {{/each}}
+</ul>
+<div class="page">
+  <h3>共<span>{{data.total}}</span>个课程</h3>
+  <div class="paging" page></div>
+</div>

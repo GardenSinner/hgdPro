@@ -1,0 +1,43 @@
+body[resource] {
+  .editHeader {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+
+    .edit-con {
+      height: 80px;
+      background: #ccc;
+
+      .edit-c-row {
+        height: 80px;
+        line-height: 80px;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  }
+
+  .panel-group.panel .panel+.panel {
+    margin-top: 0px;
+  }
+
+  .edit_list_aside {
+    width: 220px;
+    padding: 0 !important;
+    position: absolute;
+    left: 0;
+    z-index: 200;
+    top: 80px;
+  }
+
+  #myiframe {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    border: none;
+    z-index: 100;
+  }
+
+}

@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label class="col-sm-4 issue control-label">组合题（请选择组合成该题型的小题）</label>
+  <div>
+    {{each data as item index}}
+    <label class="checkbox-inline">
+      <input type="checkbox" name="inlineCheckbox" id="inlineCheckbox{{index}}" value="{{item.name}}">{{item.name}}
+    </label>
+    {{/each}}
+  </div>
+</div>

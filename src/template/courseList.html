@@ -1,0 +1,15 @@
+<ul class="course_list_left" course_list>
+  {{each data as item index}}
+  <li>
+    <div class="content_h clearfix">
+      <i></i>
+      <span>{{item.name}}</span>
+    </div>
+    <div class="content_b">
+      {{each item.children as value index}}
+      <p uid="{{value.id}}">{{value.name}}</p>
+      {{/each}}
+    </div>
+  </li>
+  {{/each}}
+</ul>

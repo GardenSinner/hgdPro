@@ -1,0 +1,17 @@
+{
+  "js/controller/course.js": "js/controller/course-42af89d457.js",
+  "js/controller/courseSetting.js": "js/controller/courseSetting-bd6c543105.js",
+  "js/controller/coursedetail.js": "js/controller/coursedetail-0bd441f15e.js",
+  "js/controller/createCourse.js": "js/controller/createCourse-e7887336e4.js",
+  "js/controller/dataTble.js": "js/controller/dataTble-d96a29ea1f.js",
+  "js/controller/echartsdemo.js": "js/controller/echartsdemo-129ac24bf8.js",
+  "js/controller/indexController.js": "js/controller/indexController-a2ce2645a4.js",
+  "js/controller/listFrame.js": "js/controller/listFrame-339b267eeb.js",
+  "js/controller/login.js": "js/controller/login-5a9259c7df.js",
+  "js/controller/pattern.js": "js/controller/pattern-ce069139fd.js",
+  "js/controller/resource.js": "js/controller/resource-6649fbc4a3.js",
+  "js/controller/studentInex.js": "js/controller/studentInex-fe3700c065.js",
+  "js/controller/teacherCourseDetails.js": "js/controller/teacherCourseDetails-95e47074df.js",
+  "js/service/api.js": "js/service/api-d27d35f05e.js",
+  "js/service/step.js": "js/service/step-64be33017a.js"
+}

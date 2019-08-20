@@ -1,0 +1,56 @@
+<div class="container clearfix">
+  <div class="con-hd">
+    <span>首页</span>
+    <span>&gt;</span>
+    <span>课程资源</span>
+    <span>&gt;</span>
+    <span>课程包名称</span>
+  </div>
+  <div class="sub-con">
+    <div class="sub-con-pic">
+      <img src="{{data.imginfo}}">
+      <div>
+        <i class="iconfont icon-wode"></i>
+        <span class="icon">200</span>
+      </div>
+    </div>
+    <div class="sub-con-txt">
+      <h3>{{data.titlemain}}</h3>
+      <h6>{{data.author}}</h6>
+      <h4>{{data.price}}</h4>
+      <p>{{data.titlesmall}}</p>
+      <p>{{data.info}}</p>
+      <p>{{data.info}}</p>
+      <p>{{data.info}}</p>
+      <p>{{data.info}}</p>
+      <a class="gain" href="javascript:void(0);">获取</a>
+      <a class="immediate" href="javascript:void(0);">立即开课</a>
+    </div>
+  </div>
+  <div class="con-bd-main">
+    <h3>{{data.firsttitle}}</h3>
+    {{#data.intro}}
+    <h3>{{data.secondtitle}}</h3>
+    {{#data.intro}}
+    <h3>{{data.thirdtitle}}</h3>
+    {{each data.outline as str}}
+    <p>{{str.tit}}: {{str.cont}}</p>
+    {{/each}}
+  </div>
+  <div class="con-bd-aside">
+    <div class="con-bd-aside-hd">
+      <span>相关教材</span>
+      <a href="javascript:void(0);">more...</a>
+    </div>
+    <div class="con-bd-aside-main">
+      <a href="javascript:void(0);">
+        <img src="{{data.imgaside}}">
+      </a>
+      <p>超越普里瓦洛夫无穷乘积与它对解析函数的应用卷</p>
+      <a href="javascript:void(0);">
+        <img src="{{data.imgaside}}">
+      </a>
+      <p>超越普里瓦洛夫无穷乘积与它对解析函数的应用卷</p>
+    </div>
+  </div>
+</div>

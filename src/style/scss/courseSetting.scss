@@ -1,0 +1,219 @@
+.container[special] {
+    padding-bottom: 118px;
+}
+
+.process[dollar] {
+    div.step-first[dollar] {
+        .ball-first {
+            background: #2DB0F9;
+        }
+    }
+
+    div.step-second[dollar] {
+        .ball-second {
+            background: #1BBC9C;
+        }
+
+        .p2 {
+            color: #000;
+        }
+    }
+}
+
+.selected-course {
+    width: 829px;
+    height: 263px;
+    box-sizing: border-box;
+    border: 2px solid #eee;
+    margin: 26px auto 0;
+    background: white;
+
+    .selected-hd {
+        width: 829px;
+        height: 46px;
+        box-sizing: border-box;
+        padding: 10px 29px 0;
+        border-bottom: 2px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        a[oid] {
+          color: #fff;
+          float: right;
+          width: 85px;
+          height: 25px;
+          background: #2DB0F9;
+          border-radius: 5px;
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+        }
+    }
+    .selected-bd {
+      box-sizing: border-box;
+      padding:  28px 29px 28px 61px;
+      font-size: 14px;
+      img {
+        float: left;
+      }
+      .msg {
+        width: 560px;
+        float: left;
+        margin-left: 40px;
+        h4 {
+          font-size: 16px;
+          font-weight: bolder;
+          padding-bottom: 16px;
+        }
+        p {
+          line-height: 22px;
+        }
+      }
+    }
+
+}
+
+.info-submit {
+    width: 829px;
+    height: 672px;
+    border: 2px solid #eee;
+    margin: 8px auto 0;
+    background: #fff;
+    box-sizing: border-box;
+
+    .info-submit-tit {
+        width: 829px;
+        height: 48px;
+        border-bottom: 2px solid #eee;
+        font-size: 16px;
+
+        h3 {
+            padding-left: 28px;
+            line-height: 48px;
+        }
+    }
+
+    .info-sumbit-bd {
+        padding: 0 0 47px;
+        box-sizing: border-box;
+    }
+}
+
+.alllist {
+    font-size: 14px;
+
+    .class-name {
+        width: 369px;
+        height: 26px;
+        border: 1px solid #e6e6e6;
+    }
+
+    li[table] {
+        margin-top: 25px;
+        margin-left: 28px;
+        box-sizing: border-box;
+    }
+
+    .t3 {
+        width: 557px;
+        height: 57px;
+        background: #f3fcff;
+        line-height: 57px;
+        box-sizing: border-box;
+        padding: 0 21px;
+
+        input {
+            margin-left: 18px;
+            width: 157px;
+            height: 26px;
+            border: 1px solid #e6e6e6;
+        }
+
+        span[endtime] {
+            margin-left: 36px;
+        }
+    }
+
+
+    .t4-2 {
+        margin-top: 5px;
+        margin-left: 106px;
+
+        .vision {
+            width: 186px;
+            height: 161px;
+            box-sizing: border-box;
+            border: 1px solid #eee;
+        }
+
+        .pict {
+            box-sizing: border-box;
+            border: 1px solid #eee;
+            width: 186px;
+            height: 161px;
+            display: none;
+        }
+    }
+
+    .t5 {
+        width: 250px;
+
+        div[confirm] {
+            float: left;
+        }
+
+        .confirm-option {
+            float: right;
+        }
+
+        li:nth-child(2),
+        li:nth-child(3) {
+            margin-top: 24px;
+        }
+    }
+
+    .t6 {
+        padding-top: 50px;
+        padding-left: 28px;
+
+        .rad1 {
+            margin-left: 22px;
+        }
+
+        .rad2 {
+            margin-left: 50px;
+        }
+    }
+}
+
+.t4-1 {
+
+    #file {
+        width: 0;
+        height: 0;
+    }
+
+    .select-file {
+        display: inline-block;
+        background: #2DB0F9;
+        width: 56px;
+        height: 26px;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        margin-left: 10px;
+        border-radius: 5px;
+        line-height: 26px;
+    }
+}
+
+input[give] {
+    width: 177px;
+    height: 37px;
+    background: #1BBC9C;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto 56px;
+}

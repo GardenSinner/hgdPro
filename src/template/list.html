@@ -1,0 +1,12 @@
+<ul class="img_list clearfix">
+  {{each data as value index}}
+  <li>
+    <div class="imgwrap">
+      <a uid="{{value.id}}" href='javascript:;'>
+        <img src="{{value.img}}" alt="">
+      </a>
+      <p>{{value.title}}</p>
+    </div>
+  </li>
+  {{/each}}
+</ul>
